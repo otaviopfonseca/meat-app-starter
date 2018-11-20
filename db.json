@@ -370,5 +370,90 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Rua Jornalista Jair Silva",
+      "number": "278",
+      "optionalAddress": "AP302",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "fries"
+        },
+        {
+          "quantity": 1,
+          "menuId": "burger"
+        },
+        {
+          "quantity": 1,
+          "menuId": "coke.png"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Rua Jornalista Jair Silva",
+      "number": "121231",
+      "optionalAddress": "123123",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "greensandwich"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "Rua Jornalista Jair Silva",
+      "number": "123",
+      "optionalAddress": "123",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "sunday"
+        },
+        {
+          "quantity": 2,
+          "menuId": "chocpop"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "address": "Rua Jornalista Jair Silva",
+      "number": "123123",
+      "optionalAddress": "123123",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "zlasagna"
+        },
+        {
+          "quantity": 2,
+          "menuId": "greensandwich"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Otávio Fonseca",
+      "email": "otaviopfonseca@yahoo.com.br",
+      "emailConfirmation": "otaviopfonseca@yahoo.com.br",
+      "address": "R. Jornalista Jair Silva",
+      "number": "278",
+      "optionalAddress": "AP302",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "burger"
+        }
+      ],
+      "id": 5
+    }
+  ]
 }
