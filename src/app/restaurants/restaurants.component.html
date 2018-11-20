@@ -25,6 +25,11 @@
       <mt-restaurant [restaurant]="restaurant"></mt-restaurant>
     </div>
   </div>
+  <div *ngIf="restaurants?.length === 0" class="col-xs-12">
+    <p class="lead text-center">
+      Não foram encontrados itens para a sua busca
+    </p>
+  </div>
 </section>
 
 <!-- FIM  do CONTEÚDO -->
