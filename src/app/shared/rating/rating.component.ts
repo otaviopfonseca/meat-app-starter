@@ -8,7 +8,7 @@ export class RatingComponent implements OnInit {
 
   @Output() rated = new EventEmitter<number>();
   rates: number[] = [1, 2, 3, 4, 5];
-  rate: number = 0;
+  rate = 0;
   previousRate: number;
   constructor() { }
 

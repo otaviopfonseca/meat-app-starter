@@ -13,7 +13,7 @@ export const ROUTES: Routes = [
     { path: '', component: HomeComponent },
     { path: 'login/:to', component: LoginComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'about', loadChildren: './about/about.module.ts#AboutModule' },
+    { path: 'about', loadChildren: './about/about.module#AboutModule' },
     { path: 'restaurants', component: RestaurantsComponent },
     { path: 'restaurants/:id', component: RestaurantDetailComponent,
         children: [

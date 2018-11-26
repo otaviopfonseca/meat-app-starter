@@ -22,7 +22,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './security/login/login.component';
 import { UserDetailComponent } from './header/user-detail/user-detail.component';
 import { ApplicationErrorHandler } from './app.error-handler';
-// import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { LocationStrategy, HashLocationStrategy, registerLocaleData} from '@angular/common';
+import locatePt from '@angular/common/locales/pt';
+
+registerLocaleData(locatePt, 'pt');
 
 @NgModule({
   declarations: [
@@ -48,8 +51,9 @@ import { ApplicationErrorHandler } from './app.error-handler';
     SharedModule.forRoot(),
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
   ],
-  // providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }, { provide: LOCALE_ID, useValue: 'pt-BR' } ],
-  providers: [{ provide: LOCALE_ID, useValue: 'pt-BR' },
+  providers: [
+              { provide: LocationStrategy, useClass: HashLocationStrategy },
+              { provide: LOCALE_ID, useValue: 'pt-BR' },
               { provide: ErrorHandler, useClass: ApplicationErrorHandler }],
   bootstrap: [AppComponent]
 })
