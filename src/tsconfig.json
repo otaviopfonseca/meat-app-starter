@@ -1,5 +1,4 @@
 {
-  "include": [ "src/**/*" ],
   "compilerOptions": {
     "sourceMap": true,
     "declaration": false,
