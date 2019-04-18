@@ -8,7 +8,7 @@
       <div class="row">
         <div class="col-xs-12">
           <h2 class="page-header">
-            <i class="fa fa-shopping-cart"></i> Finalize o seu pedido
+            <span class="fa fa-shopping-cart"></span> Finalize o seu pedido
           </h2>
         </div>
       </div>
@@ -17,7 +17,7 @@
           <p class="lead">Seus Dados:</p>
         </div>
         <div class="col-xs-12 col-sm-3">
-          <span class="help-block pull-right has-error-block" *ngIf="orderForm.hasError('emailsNotMatch')"><i class="fa fa-remove"></i>Emails não conferem</span>
+          <span class="help-block pull-right has-error-block" *ngIf="orderForm.hasError('emailsNotMatch')"><span class="fa fa-remove"></span>Emails não conferem</span>
         </div>
         <div class="col-sm-6 col-xs-12">
           <mt-input-container errorMessage="Campo obrigatório e com 5 caracteres mínimos" label="Nome">
@@ -95,7 +95,7 @@
 
     <div class="row">
       <div class="col-xs-12">
-        <button (click)="checkOrder(orderForm.value)" class="btn btn-success pull-right" [disabled]="!orderForm.valid || cartItems().length === 0"><i class="fa fa-credit-card"></i> Concluir Pedido</button>
+        <button (click)="checkOrder(orderForm.value)" class="btn btn-success pull-right" [disabled]="!orderForm.valid || cartItems().length === 0"><span class="fa fa-credit-card"></span> Concluir Pedido</button>
       </div>
     </div>
     <div>

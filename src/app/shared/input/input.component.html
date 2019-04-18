@@ -1,7 +1,7 @@
 <div class="form-group has-feedback" [class.has-success]="hasSuccess()"
                         [class.has-error]="hasError()">
-  <label class="control-label sr-only" for="inputSuccess"><i class="fa fa-check"></i> {{label}}</label>
+  <label class="control-label sr-only" for="inputSuccess"><span class="fa fa-check"></span> {{label}}</label>
   <ng-content></ng-content>
-  <span class="help-block" *ngIf="showTip && hasSuccess()"><i class="fa fa-check"></i> Ok</span>
-  <span class="help-block" *ngIf="showTip && hasError()"><i class="fa fa-remove"></i> {{errorMessage}}</span>
+  <span class="help-block" *ngIf="showTip && hasSuccess()"><span class="fa fa-check"></span> Ok</span>
+  <span class="help-block" *ngIf="showTip && hasError()"><span class="fa fa-remove"></span> {{errorMessage}}</span>
 </div>

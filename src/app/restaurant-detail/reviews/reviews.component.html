@@ -3,7 +3,7 @@
 
   <div class="box box-solid">
     <div class="box-header with-border">
-      <span class="review-score pull-right"><i class="fa fa-star"></i>{{review.rating}}</span>
+      <span class="review-score pull-right"><span class="fa fa-star"></span>{{review.rating}}</span>
       <div class="user-block">
         <img *ngIf="review.rating < 3" alt="User Image" class="img-circle" src="assets/img/reactions/pissed.png">
         <img *ngIf="review.rating >= 3 && review.rating < 4" alt="User Image" class="img-circle" src="assets/img/reactions/soso.png">
