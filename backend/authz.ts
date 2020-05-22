@@ -22,7 +22,7 @@ function extractToken(req: Request): string {
     let token = undefined;
     if (req.header && req.headers.authorization) {
         // Autorization: Bearer ZZZ.ZZZ.ZZZ
-        const parts: string[] = req.headers.authorization.split(' ');
+        const parts: string[] = req.headers.authorization[0].split(' ');
         if (parts.length === 2 && parts[0] === 'Bearer') {
             token = parts[1]
         }
